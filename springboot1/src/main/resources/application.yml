@@ -1,6 +1,8 @@
 spring:
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/qbm
+    url: jdbc:mysql://localhost:3306/qbm?useSSL=false
     username: root
     password: root
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL5Dialect
